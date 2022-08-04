@@ -7,10 +7,17 @@
     <title>Document</title>
 </head>
 <body>
+    
     {% for post in posts %}
+    <div style="background-color: blueviolet;
+    border-color: black; width: 10%;"
     <hl>{{post.title}}</hl>
     <hl>{{post.date }}</p>
     <p>{{post.description}}</p>
-    {% endfor %}   
+    <p>{{post.name}}</p>
+    <p>{{post.email}}</p>
+    </div>
+    {% endfor %}
+    <p><a href="/create/">Create New Post</a></p>  
 </body>
 </html>
